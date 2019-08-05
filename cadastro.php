@@ -14,7 +14,12 @@
 				</div>
 				<div class="formularioInput">
 					Sexo: <br>
-					<input type="text" id="sexo" name="sexo">			
+					<select id="sexo" name="sexo">
+						<option value="">Selecione</option>
+						<option value="Feminino">Feminino</option>
+						<option value="Masculino">Masculino</option>
+						<option value="Outros">Outros</option>
+					</select>				
 				</div>
 				<div class="formularioInput">
 					Cidade: <br>
