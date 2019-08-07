@@ -14,7 +14,7 @@ include("Class/ClassCrud.php");
     }
     /*se não - cadastro novo */
     else{
-        $acao="Cadastrar";
+        $acao="cadastrar";
         $id="";
         $nome="";
         $sexo="";
@@ -53,7 +53,5 @@ include("Class/ClassCrud.php");
         <div class="formularioInput formularioInput100 center">
             <input type="submit" value="<?php echo $acao; ?>">			
         </div>
-    <script type="text/javascript" src="../Javascript.js">
-    <script type="text/javascript" src="./zepto.min.js"></script>
     </form>
     </div>

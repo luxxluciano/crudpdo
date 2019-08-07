@@ -17,13 +17,13 @@ $("#formCadastro").on('submit',function(event){
 
 /*confirmar antes de deletar dados*/
 
-$('.deletar').on('click', function(event){
+$(".deletar").on('click', function(event){
 	event.preventDefault();
 
 	var Link=$(this).attr('href');
 	alert(Link);
 
-/if(confirm("Deseja mesmo apagar esses dados?")){
+if(confirm("Deseja mesmo apagar esses dados?")){
 	window.location.href=Link;
 }else{
 	return false;
