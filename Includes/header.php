@@ -7,7 +7,6 @@
 </head>
 
 <body>
-
 	<div class="banner">
 		<img src="Images/banner.png" alt="Banner Crud">
 	</div>

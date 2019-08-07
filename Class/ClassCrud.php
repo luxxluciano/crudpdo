@@ -1,5 +1,5 @@
 <?php
-include("../Class/ClassConexao.php");
+include("{$_SERVER['DOCUMENT_ROOT']}/crudpdo/Class/ClassConexao.php");
 
 class ClassCrud extends ClassConexao{
 
@@ -41,8 +41,23 @@ class ClassCrud extends ClassConexao{
 		return $this->crud;
 	}
 
+	#Seleção no banco de dados
+	public function selectDB($campos, $tabela, $condicao, $parametros){
+		$this->preparedStatements("select {$campos} from {$tabela} {$condicao}", $parametros);
+		return $this->crud;
+	}
 
+	#Delete no banco de dados
+	public function deleteDB($tabela, $condicao, $parametros){
+		$this->preparedStatements("delete from {$tabela} where {$condicao}", $parametros);
+		return $this->crud;
+	}
 
+	#Atualização no banco de dados
+	public function updateDB($tabela, $set, $condicao, $parametros){
+		$this->preparedStatements("update {$tabela} set {$set} where {$condicao}", $parametros);
+		return $this->crud;
+	}
 
 }
 
